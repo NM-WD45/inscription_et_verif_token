@@ -87,7 +87,7 @@ if (!empty($_POST)) {
             </ul>';
         }
         echo '<p>
-        <a href="inscription.php" style="color:white;border:1px solid white;padding:10px">Fermer</a>
+        <a href="inscription.php">Fermer</a>
         </p>';
     }
 }
