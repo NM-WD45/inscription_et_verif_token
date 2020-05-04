@@ -50,7 +50,7 @@ if (!empty($_POST)) {
                 </div>';
             }
             else {
-                $req = $db->prepare('INSERT INTO membres SET pseudo = ?, code_postal = ?, mail_parent = ?');
+                $req = $db->prepare('INSERT INTO membres SET pseudo = ?, code_postal = ?, mail = ?');
                 $req->execute([$pseudo, $cp, $mail]);
 
                 $req = $db->prepare("SELECT * FROM membres WHERE mail=:mail");
